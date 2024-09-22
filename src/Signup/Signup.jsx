@@ -21,9 +21,9 @@ function Signup() {
             alert("password length must be 6 character")
           }
 
-        else {
-          alert("Wrong Username or Password")
-        }
+          else {
+            navigate("/Error")
+          }
     }
   
 

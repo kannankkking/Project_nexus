@@ -17,7 +17,7 @@ function Signin() {
           alert("Please fill in all fields")
         }
         else {
-          navigate("Error")
+          navigate("/Error")
         }
     }
 

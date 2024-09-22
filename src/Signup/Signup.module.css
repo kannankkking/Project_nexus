@@ -1,0 +1,127 @@
+* {
+    margin: 0;
+    padding: 0;
+    overflow-wrap: hidden;
+
+}
+
+.img {
+    background-image: linear-gradient(225deg, #FF3CAC 0%, #784BA0 50%, #2B86C5 100%);
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.container {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 400px;
+    height: 500px;
+    gap: 40px;
+    left: 460px;
+    top: 10%;
+    justify-content: center;
+    background: transparent;
+    backdrop-filter: blur(8px);
+    border-radius: 10px;
+    border: 2px solid rgb(255, 255, 255, .2);
+}
+
+.container h3 {
+    color: rgb(255, 255, 255);
+    background: none;
+    font-size: 25px;
+}
+
+.container input {
+    width: 300px;
+    height: 30px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    background-color: white;
+    color: black;
+}
+
+.icon {
+    font-size: 30px;
+    background-color: #784BA0;
+    border: none;
+    transition: 0.5s;
+}
+
+.icons {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    background: none;
+    border: none;
+}
+
+.container .bttn {
+    width: 200px;
+    height: 40px;
+    font-size: 18px;
+    border-radius: 12px;
+    outline: none;
+    font-style: italic;
+    background-color: #784BA0;
+    border: 1px solid wheat;
+    transition: 0.6s;
+}
+
+p,
+a {
+    background: none;
+}
+
+a {
+    color: black;
+}
+
+.container .bttn:hover {
+    background: #a242f7;
+    color: white;
+    cursor: pointer;
+    transform: translateY(-6px);
+    transition: 0.6s;
+}
+
+.container .icon:hover {
+    transition: 0.5s;
+    transform: translateY(-7px);
+}
+
+@media screen and (max-width:768px) {
+
+    .container {
+        position: relative;
+        left: 200px;
+        top: 60px;
+    }
+
+    .img {
+        height: 100%;
+
+    }
+}
+
+@media screen and (max-width:600px) {
+
+    .container {
+        position: relative;
+        left: 30px;
+        top: 60px;
+        height: 600px;
+    }
+}

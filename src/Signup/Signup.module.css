@@ -55,7 +55,7 @@
 
 .icon {
     font-size: 30px;
-    background-color: #784BA0;
+    background: none;
     border: none;
     transition: 0.5s;
 }
@@ -102,17 +102,20 @@ a {
     transform: translateY(-7px);
 }
 
+@media screen and (max-width:1200px) {
+
+    .container {
+        position: relative;
+        left: 34%;
+        top: 60px;
+    }
+}
 @media screen and (max-width:768px) {
 
     .container {
         position: relative;
-        left: 200px;
+        left: 28%;
         top: 60px;
-    }
-
-    .img {
-        height: 100%;
-
     }
 }
 
@@ -120,8 +123,23 @@ a {
 
     .container {
         position: relative;
-        left: 30px;
+        left: 110px;
+        top: 60px;
+        height: 500px;
+
+    } 
+}
+@media screen and (max-width:487px) {
+
+    .container {
+        position: relative;
+        left: 8px;
         top: 60px;
         height: 600px;
+      
     }
 }
+
+
+
+

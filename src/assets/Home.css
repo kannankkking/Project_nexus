@@ -4,12 +4,6 @@
     background-color: black;
     color: #fff;
   }
-  h1{
-    font-style: italic;
-    text-align: center;
-    color: violet;
-  }
-  
   .gallery{
     display: flex;
     flex-wrap: wrap;

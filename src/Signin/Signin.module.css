@@ -1,26 +1,28 @@
-*{
-    margin:0;
+* {
+    margin: 0;
     padding: 0;
     overflow-wrap: hidden;
-   
+
 }
-.img{
-   /* background-image: url("../images/wallpaper.jpg"); */
-   background-color: #FF3CAC;
-   background-image: linear-gradient(225deg, #FF3CAC 0%, #784BA0 50%, #2B86C5 100%);   
-   width: 100%;
-   height: 800px;   
-   overflow: hidden;
-   position: relative;
-   background-position: center;
-   background-size: cover;
-   background-repeat: no-repeat;
-   position: fixed;
-   top: 0;
-   bottom: 0;
-   left: 0;
+
+.img {
+    /* background-image: url("../images/wallpaper.jpg"); */
+    background-color: #FF3CAC;
+    background-image: linear-gradient(225deg, #FF3CAC 0%, #784BA0 50%, #2B86C5 100%);
+    width: 100%;
+    height: 800px;
+    overflow: hidden;
+    position: relative;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
 }
-.container{
+
+.container {
     position: absolute;
     display: flex;
     flex-direction: column;
@@ -36,14 +38,15 @@
     border-radius: 10px;
     border: 2px solid rgb(255, 255, 255, .2);
 }
-.container h3{
+
+.container h3 {
     color: rgb(255, 254, 254);
     font-size: 25px;
     background: none;
 
 }
 
-.container input{
+.container input {
     width: 300px;
     height: 30px;
     border-radius: 10px;
@@ -51,23 +54,26 @@
     outline: none;
     background: white;
     color: black;
-   
+
 
 }
-.icon{
+
+.icon {
     font-size: 30px;
-    background-color: #784BA0;
-    border:none;
+    background: none;
+    border: none;
     transition: 0.5s;
 }
-.icons{
+
+.icons {
     display: flex;
     flex-direction: row;
     gap: 40px;
     background: none;
-    border:none;
+    border: none;
 }
-.container .bttn{
+
+.container .bttn {
     width: 200px;
     height: 40px;
     font-size: 18px;
@@ -77,39 +83,56 @@
     background-color: #784BA0;
     border: 1px solid wheat;
 }
-.container .bttn:hover{
-    background:#a242f7 ;
+
+.container .bttn:hover {
+    background: #a242f7;
     color: white;
     cursor: pointer;
     transform: translateY(-6px);
     transition: 0.6s;
 }
-.container .icon:hover{
+
+.container .icon:hover {
     transition: 0.5s;
     transform: translateY(-7px);
-} 
+}
+@media screen and (max-width:1200px) {
 
-
-@media screen and (max-width:768px){
-  
-    .container{
+    .container {
         position: relative;
-        left: 200px;
+        left: 34%;
         top: 60px;
-        
-    
-    }
-    .img{
-        height: 100%;
-       
+ 
     }
 }
-@media screen and (max-width:600px){
-  
-    .container{
+
+@media screen and (max-width:768px) {
+
+    .container {
         position: relative;
-        left: 50px;
+        left: 28%;
         top: 60px;
-        height:500px;
+   
+ 
+    }
+}
+
+@media screen and (max-width:600px) {
+
+    .container {
+        position: relative;
+        left: 110px;
+        top: 60px;
+        height: 500px;
+
     } 
+}
+@media screen and (max-width:487px) {
+
+    .container {
+        position: relative;
+        left: 8px;
+        top: 60px;
+        height: 600px;
+    }
 }

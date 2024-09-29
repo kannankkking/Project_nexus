@@ -1,25 +1,18 @@
+/* Signin.module.css */
+
 * {
     margin: 0;
     padding: 0;
-    overflow-wrap: hidden;
-
+    box-sizing: border-box;
 }
 
 .img {
-    /* background-image: url("../images/wallpaper.jpg"); */
-    background-color: #FF3CAC;
     background-image: linear-gradient(225deg, #FF3CAC 0%, #784BA0 50%, #2B86C5 100%);
-    width: 100%;
-    height: 800px;
-    overflow: hidden;
-    position: relative;
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
     position: fixed;
     top: 0;
     bottom: 0;
     left: 0;
+    right: 0;
 }
 
 .container {
@@ -27,54 +20,54 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 400px;
-    height: 500px;
-    gap: 40px;
-    left: 460px;
-    top: 10%;
-    justify-content: center;
+    width: 90%; /* Responsive width */
+    max-width: 400px; /* Maximum width */
+    height: 400px; /* Automatic height */
+    gap: 20px; /* Reduced gap for mobile */
+    left: 50%;
+    top: 20%; /* Adjusted for better positioning */
+    transform: translateX(-50%); /* Centering */
     background: transparent;
     backdrop-filter: blur(8px);
     border-radius: 10px;
-    border: 2px solid rgb(255, 255, 255, .2);
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    padding: 20px; /* Added padding */
 }
 
 .container h3 {
-    color: rgb(255, 254, 254);
+    color: rgb(255, 255, 255);
     font-size: 25px;
+    text-align: center; 
     background: none;
-
 }
 
 .container input {
-    width: 300px;
-    height: 30px;
+    width: 100%; /* Full width */
+    max-width: 300px; /* Limit max width */
+    height: 40px; /* Increased height for better usability */
     border-radius: 10px;
     border: none;
     outline: none;
     background: white;
     color: black;
-
-
+    padding: 0 10px; /* Added padding */
 }
 
 .icon {
     font-size: 30px;
-    background: none;
-    border: none;
     transition: 0.5s;
+    background: none;
 }
 
 .icons {
     display: flex;
     flex-direction: row;
-    gap: 40px;
+    gap: 20px; 
     background: none;
-    border: none;
 }
 
 .container .bttn {
-    width: 200px;
+    width: 90%; /* Full width button */
     height: 40px;
     font-size: 18px;
     border-radius: 12px;
@@ -82,6 +75,7 @@
     font-style: italic;
     background-color: #784BA0;
     border: 1px solid wheat;
+    transition: 0.6s;
 }
 
 .container .bttn:hover {
@@ -89,54 +83,32 @@
     color: white;
     cursor: pointer;
     transform: translateY(-6px);
-    transition: 0.6s;
 }
 
 .container .icon:hover {
-    transition: 0.5s;
     transform: translateY(-7px);
 }
 
-
-
-
-@media screen and (max-width:1200px) {
-
+/* Responsive Styles */
+@media (max-width: 768px) {
     .container {
-        position: relative;
-        left: 34%;
-        top: 60px;
- 
+        padding: 15px; /* Reduced padding for mobile */
+    }
+
+    .container h3 {
+        font-size: 20px; /* Smaller heading on mobile */
+    }
+
+    .container input {
+        height: 45px; /* Taller inputs on mobile */
+    }
+
+    .container .bttn {
+        height: 45px; /* Taller button on mobile */
+    }
+
+    .icon {
+        font-size: 25px; /* Smaller icons */
     }
 }
 
-@media screen and (max-width:768px) {
-
-    .container {
-        position: relative;
-        left: 28%;
-        top: 60px;
-   
- 
-    }
-}
-
-@media screen and (max-width:600px) {
-
-    .container {
-        position: relative;
-        left: 110px;
-        top: 60px;
-        height: 500px;
-
-    } 
-}
-@media screen and (max-width:487px) {
-
-    .container {
-        position: relative;
-        left: 8px;
-        top: 60px;
-        height: 600px;
-    }
-}

@@ -33,12 +33,12 @@ function Signup() {
             <div className={styles.container}>
                <h3 >Signup</h3>
                 <input onChange={(e)=>setusername(e.target.value)} type='text' placeholder='Username' />
-                <input  onChange={(e)=>setmail(e.target.value)} type='text' placeholder='G-Mail' />
-                <input  onChange={(e)=>setpassword(e.target.value)} type='password' placeholder='Password' />
+                <input  onChange={(e)=>setmail(e.target.value)} type='text' placeholder='G-Mail' required/>
+                <input  onChange={(e)=>setpassword(e.target.value)} type='password' placeholder='Password' required/>
                
 
                 <button className={styles.bttn} onClick={login} type='submit'>Signup</button>
-                <p>Do you have an account <a href='/Signin'>Signin</a></p>
+                <p>Already have an account ? <a href='/Signin'>Signin</a></p>
                 <div className={styles.icons}>
            <a href='https://myaccount.google.com/' target='_blank'><FaGoogle className={styles.icon}/></a>
            <a href='https://www.facebook.com/login.php/'target='_blank'> <FaFacebook className={styles.icon}/></a>
